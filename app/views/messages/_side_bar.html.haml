@@ -1,0 +1,25 @@
+.side-bar
+  .side-header
+    .side-header__box
+      .side-header__box--user
+        = current_user.name
+      .side-header__box__icon
+        .side-header__box__icon--new-groups
+          = link_to "#{}" do
+            = icon('far', 'edit', class: 'icon')
+        .side-header__box__icon--edit
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
+  .groups
+    .group-name
+      .group-name__box
+        tech-champ
+      .group-name__current-message
+        まだメッセージはありません
+  
+    .group-name
+      .group-name__box
+        tech-champ
+      .group-name__current-message
+        まだメッセージはありません
+    
