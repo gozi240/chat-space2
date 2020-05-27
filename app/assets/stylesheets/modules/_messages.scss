@@ -165,17 +165,21 @@
     // overflow: scroll;
     box-sizing: border-box;
     padding: 20px;
-    .group-name{
+    .group{
       // padding: 0 20px;
       color: #ffffff;
       font-weight: bold;
-      &__box{
-        font-size: 15px;
-        // padding-top: 20px;
-      }
-      &__current-message{
-        font-size: 11px;
-        padding: 5px 0 40px 0;
+      a{
+        color: wheat;
+        text-decoration: none;
+        &__name{
+          font-size: 15px;
+          padding-top: 20px;
+        }
+        &__message{
+          font-size: 11px;
+          padding: 5px 0 40px 0;
+        }
       }
     }
   }
