@@ -39,6 +39,7 @@ $(function(){
      return html;
    };
  }
+ 
   $('#new_message').on('submit', function(e){
   e.preventDefault();
   var formData = new FormData(this);
@@ -59,6 +60,7 @@ $(function(){
       $('.form__submit').prop('disabled', false);
     })
   })
+
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
     $.ajax({
